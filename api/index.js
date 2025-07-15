@@ -3,9 +3,9 @@ const express = require('express');
 const cors = require('cors'); 
 const app = express();
 const mongoose = require('mongoose');
-const Todo = require('./Todos');
+const Todo = require('../Todos');
 const jwt = require('jsonwebtoken');
-const User = require('./Users');
+const User = require('../Users');
 
 app.use(cors({
   origin: 'http://localhost:5173', 
