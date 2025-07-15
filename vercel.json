@@ -5,10 +5,5 @@
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index.js" }
-  ],
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "../Todos.js,../Users.js"
-    }
-  }
+  ]
 }
