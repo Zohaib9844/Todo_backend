@@ -8,8 +8,8 @@ const jwt = require('jsonwebtoken');
 const User = require('./Users');
 
 app.use(cors({
-  origin: 'http://localhost:5173', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true, 
 }));
 
