@@ -8,10 +8,12 @@ const jwt = require('jsonwebtoken');
 const User = require('../Users');
 
 app.use(cors({
-  origin: 'https://todo-front-end-27iq.vercel.app', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-  credentials: true, 
+  origin: 'https://todo-front-end-27iq.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization'], 
 }));
+
 
 
 app.use(express.json());
