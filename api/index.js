@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../Users');
 
 app.use(cors({
-  origin: 'todo-front-end-27iq-git-master-zohaibs-projects-68f2b5f1.vercel.app', 
+  origin: 'https://todo-front-end-27iq.vercel.app', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true, 
 }));
